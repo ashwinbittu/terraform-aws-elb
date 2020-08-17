@@ -15,3 +15,6 @@ variable "app_name" {
 
 variable "app_csi" {
 }
+
+variable "lb_ssl_id" {
+}
