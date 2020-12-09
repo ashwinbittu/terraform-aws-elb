@@ -8,13 +8,14 @@ resource "aws_elb" "my-elb" {
     lb_port           = 80
     lb_protocol       = "http"
   }
-  listener {
-    instance_port      = 80
-    instance_protocol  = "http"
-    lb_port            = 443
-    lb_protocol        = "https"
-    ssl_certificate_id = var.lb_ssl_id
-  }  
+  #listener {
+  #  instance_port      = 80
+  #  instance_protocol  = "http"
+  #  lb_port            = 443
+  #  lb_protocol        = "https"
+  #  ssl_certificate_id = var.lb_ssl_id
+  #}
+  
   health_check {
     healthy_threshold   = 2
     unhealthy_threshold = 2
