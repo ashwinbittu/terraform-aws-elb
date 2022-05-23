@@ -13,7 +13,7 @@ variable "app_env" {
 variable "app_name" {
 }
 
-variable "app_csi" {
+variable "app_id" {
 }
 
 variable "lb_ssl_id" {
